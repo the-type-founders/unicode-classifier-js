@@ -33,8 +33,4 @@ function classify(codepoints: Codepoints): Group {
   return result;
 }
 
-console.log(
-  classify([1, 2, 3, 4, 5, 6, 67, 562, 2371, 2453, 56845, 122, 34543, 4343])
-);
-
 export default classify;
