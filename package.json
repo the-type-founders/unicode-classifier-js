@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "update": "ts-node src/update.ts",
-    "prepublish": "tsc"
+    "prepare": "tsc"
   },
   "author": "Bram Stein <bram@thetypefounders.com>",
   "license": "Apache-2.0",
