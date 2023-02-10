@@ -1,0 +1,40 @@
+import data from '../data.js';
+
+type Category = string;
+type Script = string;
+type Codepoints = Array<number>;
+
+type Group = Record<Category, Record<Script, Codepoints>>;
+
+function classify(codepoints: Codepoints): Group {
+  const result = {};
+
+  for (const codepoint of codepoints) {
+    let category = 'Unknown';
+    let script = 'Unknown';
+
+    if (data.has(codepoint)) {
+      const item = data.get(codepoint);
+
+      category = item.category;
+      script = item.script;
+    }
+
+    if (!result.hasOwnProperty(category)) {
+      result[category] = {};
+    }
+
+    if (!result[category].hasOwnProperty(script)) {
+      result[category][script] = [];
+    }
+    result[category][script].push(codepoint);
+  }
+
+  return result;
+}
+
+console.log(
+  classify([1, 2, 3, 4, 5, 6, 67, 562, 2371, 2453, 56845, 122, 34543, 4343])
+);
+
+export default classify;
