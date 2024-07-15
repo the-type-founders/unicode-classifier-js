@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "echo",
+    "test": "echo",
     "update": "ts-node src/update.ts",
     "prepare": "tsc"
   },

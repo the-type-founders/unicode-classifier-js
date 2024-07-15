@@ -1,4 +1,4 @@
-# Unicode Classifier
+# Unicode Classifier [![Release][release-img]][release-url]
 
 This is a TypeScript module that you can use to classify codepoints by their
 category and script (writing system).
@@ -35,3 +35,6 @@ console.log(classify([56845]));
 Codepoint categories and scripts data is automatically downloaded from the
 Unicode website. To update the data, change `UNICODE_VERSION` in `src/update.ts`
 and run `npm run update` to update the data file.
+
+[release-img]: https://github.com/the-type-founders/unicode-classifier-js/actions/workflows/release.yml/badge.svg
+[release-url]: https://github.com/the-type-founders/unicode-classifier-js/actions/workflows/release.yml
