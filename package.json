@@ -1,12 +1,13 @@
 {
   "name": "@the-type-founders/unicode-classifier",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Classification of Unicode codepoints by Unicode categories and scripts.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "check": "echo",
+    "check": "prettier . --check",
+    "format": "prettier . --check --write",
     "test": "echo",
     "update": "ts-node src/update.ts",
     "prepare": "tsc"
@@ -21,6 +22,7 @@
     "characterset": "^2.0.0",
     "mocha": "^10.2.0",
     "node-fetch": "^3.3.0",
+    "prettier": "^3.3.3",
     "ts-loader": "^9.4.2",
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.4.0",
