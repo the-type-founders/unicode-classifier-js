@@ -1,7 +1,7 @@
 {
-  "name": "@typefounders/codepoint-classifier",
+  "name": "@the-type-founders/unicode-classifier",
   "version": "1.0.2",
-  "description": "Classify codepoints by Unicode categories and scripts.",
+  "description": "Classification of Unicode codepoints by Unicode categories and scripts.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
