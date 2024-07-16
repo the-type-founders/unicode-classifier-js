@@ -1,5 +1,5 @@
 {
-  "name": "@the-type-founders/unicode-classifier",
+  "name": "@thetypefounders/unicode-classifier",
   "version": "1.1.0",
   "description": "Classification of Unicode codepoints by Unicode categories and scripts.",
   "main": "dist/index.js",
